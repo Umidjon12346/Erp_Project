@@ -6,11 +6,14 @@ import { AuthAdminService } from './admin/admin.auth.service';
 import { AuthTeacherController } from './teacher/teacher.auth.controller';
 import { TeacherModule } from '../teacher/teacher.module';
 import { AuthTeacherService } from './teacher/teacher.auth.service';
+import { StudentModule } from '../student/student.module';
+import { AuthStudentController } from './student/student.auth.controller';
+import { AuthStudentService } from './student/student.auth.service';
 
 
 @Module({
-  imports: [JwtModule.register({ global: true }),AdminModule,TeacherModule],
-  controllers: [AuthAdminController,AuthTeacherController],
-  providers: [AuthAdminService,AuthTeacherService],
+  imports: [JwtModule.register({ global: true }),AdminModule,TeacherModule,StudentModule],
+  controllers: [AuthAdminController,AuthTeacherController,AuthStudentController],
+  providers: [AuthAdminService,AuthTeacherService,AuthStudentService],
 })
 export class AuthModule {}
