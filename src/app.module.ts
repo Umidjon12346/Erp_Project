@@ -16,6 +16,10 @@ import { CourseModule } from './course/course.module';
 import { GroupModule } from './group/group.module';
 import { StudentgroupModule } from './studentgroup/studentgroup.module';
 import { TeachergroupModule } from './teachergroup/teachergroup.module';
+import { GradesModule } from './grades/grades.module';
+import { HomeworkModule } from './homework/homework.module';
+import { MediaModule } from './media/media.module';
+import { HomeworkSubmissionModule } from './homework_submission/homework_submission.module';
 
 
 @Module({
@@ -47,6 +51,10 @@ import { TeachergroupModule } from './teachergroup/teachergroup.module';
     GroupModule,
     StudentgroupModule,
     TeachergroupModule,
+    GradesModule,
+    HomeworkModule,
+    MediaModule,
+    HomeworkSubmissionModule,
   ],
   controllers: [],
   providers: [],
